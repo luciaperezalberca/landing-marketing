@@ -1,13 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Form from '../components/Form.astro';
+import LogoColor from '../components/icons/logoColor.astro';
 ---
 
 <Layout 
 	title="Dime tu marca"
 	description="Contrata a Dime tu marca">
 	<main>
-		<section class="flex justify-center bg-gradient-to-b from-primary-blue to-secondary-blue text-white w-[1440px]">
+		<section class="flex justify-center bg-gradient-to-b from-primary-blue to-secondary-blue text-white w-[1440px] mb-12">
 			<div class="flex items-center justify-center px-10 pt-10">
 				<div class="flex flex-col gap-8 pl-20">
 					<p class="text-[28px] w-[743px] font-light"> Conéctate al ecosistema digital y <span class="font-semibold">logra tus objetivos</span></p>
@@ -19,7 +22,33 @@ import Button from '../components/Button.astro';
 					<img src="/images/image-banner.png" alt="imagen de isaelia" class="h-[549px]">
 				</div>
 			</div>
-			
 		</section>
+		<SectionContainer> 
+			<div class="pl-10">
+				<LogoColor />
+				<p class="text-primary-orange pt-5 text-right font-medium text-xl"> y dejemos huella juntos </p>
+			</div>
+			<div class="flex flex-col gap-8 pl-20">
+				<h1 class="text-[50px] w-[675px]"> Tenemos una <span class="text-primary-orange font-semibold"> visión única </span> </h1>
+				<p class="text-base w-[746px] font-light"> Reconocemos el sentido de aportar valor desde lo genuino. Queremos que, más allá de objetivos económicos y de vanidad, haya una pasión de por medio por el espíritu de la marca. Buscamos que sean cada vez más quienes se conecten al ecosistema digital, y recorran el camino con la seguridad que les da el conocimiento.</p>
+				<p class="text-base w-[746px]"><span class="text-primary-lightblue font-semibold text-xl"> Mientras más almas se toquen,</span><span class="text-primary-orange font-semibold text-xl"> más huellas dejaremos. </span></p>
+			</div>
+		</SectionContainer>
+		<section class="bg-primary-blue h-[456px] mt-20 w-[1440px]" id="contacto"> 
+			<Form />
+		</section>
+		<SectionContainer> 
+			<div class="pt-20 pl-10">
+				<img src="/images/women-power.png" alt="ilustracion de mujeres" class="w-full">
+			</div>
+			<div class="flex flex-col gap-8 pl-20" id="about">
+				<h1 class="text-[50px] w-[675px]"> El inicio de <span class="text-primary-lightblue font-semibold"> Dime </span><span class="text-primary-orange font-semibold"> Tu Marca </span> </h1>
+				<p class="text-base w-[746px] font-light"> Mi trayectoria en corporaciones multinacionales y mi formación en Comunicación Social y Marketing me llevaron a comprender el potencial del mundo digital en los negocios. </p>
+				<p class="text-base w-[746px] font-light"> Esta inquietud dio origen a <span class="text-primary-orange font-semibold"> "Dime Tu Marca" </span> , un espacio de acompañamiento donde brindamos capacitación y estrategias de marketing para la transición al ámbito virtual, así como asesoría y consultoría para fortalecer la presencia online de las marcas. Nuestra misión es guiar a otros en este emocionante viaje digital, inspirados por la necesidad de comprender y aprovechar el mundo digital en el ámbito empresarial. </p>
+				<p class="text-base w-[746px] font-light"> Con el surgimiento de las redes sociales y la evolución del mundo interconectado, las marcas exitosas en el mundo real se vieron desafiadas a adaptarse al entorno digital para mantener su relevancia. En <span class="text-primary-orange font-semibold"> "Dime Tu Marca" </span> , no solo nos enfocamos en comprender este cambio, sino que también trabajamos activamente para ayudar a las marcas a prosperar en este nuevo entorno.</p>
+				<p class="text-base w-[746px] font-light"> Nuestros servicios de asesoría y consultoría están diseñados para fortalecer la presencia online y garantizar que las marcas dejen una <span class="text-primary-lightblue font-semibold"> huella significativa en el mundo digital. </span> </p>
+
+			</div>
+		</SectionContainer>
 	</main>
 </Layout>
