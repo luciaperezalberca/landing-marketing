@@ -2,11 +2,11 @@
 import LogoNav from "./icons/logoNav.astro";
 ---
 
-<header class="bg-primary-blue h-32 text-white flex justify-around items-center w-[1440px]">
-        <LogoNav />
+<header class="bg-primary-blue h-32 text-white flex justify-around items-center w-[1440px] sticky top-0">
+        <a href="/" class="hover:opacity-90"><LogoNav /></a>
         <nav class="flex gap-8">
-                <a href="/#servicios"> Servicios </a>
-                <a href="/#about"> Quiénes Somos </a>
-                <a href="/#contacto"> Contacto </a>
+                <a href="/#servicios" class="hover:text-primary-orange hover:scale-110"> Servicios </a>
+                <a href="/#about" class="hover:text-primary-orange hover:scale-110"> Quiénes Somos </a>
+                <a href="/#contacto" class="hover:text-primary-orange hover:scale-110"> Contacto </a>
         </nav>
 </header>
