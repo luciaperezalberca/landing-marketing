@@ -1,3 +1,57 @@
-<footer class="bg-primary-blue h-32 text-white flex justify-around items-center w-[1440px]">
-        <p> 2024 .Todos los derechos reservados </p>
+---
+import TikTokFicon from "./icons/TiktokFooterIcon.astro";
+import LinkedInFicon from "./icons/LinkedINFooter.astro";
+import SendMailFicon from "./icons/SendMailFooterIcon.astro";
+import LogoFooter from "./icons/LogoFooter.astro";
+import InstagramFicon  from './icons/LinkedINFooter.astro';
+---
+
+<footer
+  class="bg-primary-blue h-auto text-white flex max-w-full"
+>
+  <div class="mt-8 ml-32 mr-0">
+    <LogoFooter class="" />
+  </div>
+  <div class="ml-0">
+    <div class="grid grid-rows-3 grid-cols-2">
+        <div class="flex flex-initial col-span-3 col-start-1 col-end-3">
+
+                <p class="text-lg text-left w-2/3 mt-6 ml-0">Dime Tu Marca</p>
+        </div>
+
+      
+        <p class="flex inline text-xs  col-span-1 col-start-1 col-end-2 row-start-2 inline-block align-text-middle m-1"><InstagramFicon class="ms-0.5" />
+          <a
+            href="https://www.instagram.com/dimetumarca/"
+            target="_blank"
+            class=" hover:opacity-80"
+          >
+            https://www.instagram.com/dimetumarca/</a
+          >
+        </p>
+      
+      
+       
+        <p class="flex inline text-xs col-span-1 col-start-1 col-end-2 row-start-3 m-1 inline-block align-text-middle">
+                <TikTokFicon class="ms-0.5" /><a
+            href="https://www.tiktok.com/@dimetumarca"
+            target="_blank"
+            class=" hover:opacity-80"
+            >https://www.tiktok.com/@dimetumarca</a
+          >
+        </p>
+      
+    
+    
+      
+        <p class="flex inline text-xs  col-span-1 col-start-2 col-end-3 row-start-2 inline-block align-text-middle m-1"><LinkedInFicon class="ms-0.5" />
+          <a href="https://linkedin.com/company/dimetumarca" target="_blank" class=" hover:opacity-80">
+                https://www.linkedin.com/company/dimetumarca/</a>
+        </p>
+      
+        <p class="flex inline text-xs col-span-1 col-start-2 col-end-3 m-1 inline-block align-text-middle"><SendMailFicon class="ms-0.5" />
+          irojas@dimetumarca.com
+        </p>    
+  </div>
+  <p class="text-xs align-center flex justify-around">Todos los derechos reservados</p>
 </footer>

@@ -8,13 +8,15 @@ import InstagramIcon from '../components/icons/Instagram.astro';
 import TikTokIcon from '../components/icons/TikTok.astro';
 import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import SendMailIcon from '../components/icons/SendMail.astro';
+
+
 ---
 
-<Layout 
+<Layout
 	title="Dime tu marca"
 	description="Contrata a Dime tu marca">
-	<main class="w-[1440px]">
-		<section class="flex justify-center bg-gradient-to-b from-primary-blue to-secondary-blue text-white mb-12 w-[1440px]">
+	<main class="max-w-full">
+		<section class="flex justify-center bg-gradient-to-b from-primary-blue to-secondary-blue text-white mb-12 max-w-full">
 			<div class="flex items-center justify-center px-10 pt-10">
 				<div class="flex flex-col gap-8 pl-10">
 					<p class="text-[28px] w-[743px] font-light"> Conéctate al ecosistema digital y <span class="font-semibold">logra tus objetivos</span></p>
@@ -28,39 +30,41 @@ import SendMailIcon from '../components/icons/SendMail.astro';
 			</div>
 		</section>
 		<SectionContainer>
-			<div class="flex flex-col gap-y-8 pl-32">
+			<div class="flex flex-col gap-y-8 pl-32 max-w-full">
 				<p class="text-lg w-2/3"> Somos una consultora de Comunicaciones y Marketing dedicada a canalizar tu presencia digital. </p>
 				<p class="text-lg w-2/3"> Te acompañamos en el proceso para que <span class="text-primary-orange font-semibold text-xl"> cada paso sea seguro, </span><span class="text-primary-lightblue font-semibold text-xl"> y logres alcanzar tus metas. </span></p>
 			</div>
-			<div class=" w-1/3 pr-32">
+			<div class=" w-1/3 pr-32 max-w-full">
 				<img src="/images/ilust-naranja.png" alt="ilustracion de dos mujeres">
 			</div>
 		</SectionContainer>
 		<SectionContainer> 
-			<div class="pl-10">
+			<div class="pl-10 max-w-full">
 				<LogoColor />
 				<p class="text-primary-orange pt-5 text-right font-medium text-xl"> y dejemos huella juntos </p>
 			</div>
-			<div class="flex flex-col gap-8 pl-20">
-				<h1 class="text-[50px] w-[675px]"> Tenemos una <span class="text-primary-orange font-semibold"> visión única </span> </h1>
-				<p class="text-base w-[746px] font-light"> Reconocemos el sentido de aportar valor desde lo genuino. Queremos que, más allá de objetivos económicos y de vanidad, haya una pasión de por medio por el espíritu de la marca. Buscamos que sean cada vez más quienes se conecten al ecosistema digital, y recorran el camino con la seguridad que les da el conocimiento.</p>
-				<p class="text-base w-[746px]"><span class="text-primary-lightblue font-semibold text-xl"> Mientras más almas se toquen,</span><span class="text-primary-orange font-semibold text-xl"> más huellas dejaremos. </span></p>
+			<div class="flex flex-col gap-8 pl-20 max-w-full">
+				<h1 class="text-[50px] max-w-full"> Tenemos una <span class="text-primary-orange font-semibold"> visión única </span> </h1>
+				<p class="text-base max-w-full font-light"> Reconocemos el sentido de aportar valor desde lo genuino. Queremos que, más allá de objetivos económicos y de vanidad, haya una pasión de por medio por el espíritu de la marca. Buscamos que sean cada vez más quienes se conecten al ecosistema digital, y recorran el camino con la seguridad que les da el conocimiento.</p>
+				<p class="text-base max-w-full"><span class="text-primary-lightblue font-semibold text-xl"> Mientras más almas se toquen,</span><span class="text-primary-orange font-semibold text-xl"> más huellas dejaremos. </span></p>
 			</div>
 		</SectionContainer>
-		<section class="bg-primary-blue h-[456px] mt-20 w-[1440px]" id="contacto"> 
+		<section class="bg-primary-blue h-[456px] mt-20 max-w-full" id="contacto"> 
 			<Form />
 		</section>
-		<div class="flex justify-start items-center gap-x-32 pl-60 mt-12 mb-8 w-full">
-			<p class="text-lg"> Encuéntranos en </p>
-			<div class="flex justify-between gap-x-32">
-				<a href="https://www.instagram.com/dimetumarca/" target="_blank" class="hover:scale-110 hover:opacity-80"><InstagramIcon /></a>
-				<a href="https://www.tiktok.com/@dimetumarca"  target="_blank" class="hover:scale-110 hover:opacity-80"><TikTokIcon /></a>
-				<a href="https://www.linkedin.com/company/dimetumarca/" target="_blank" class="hover:scale-110 hover:opacity-80"><LinkedInIcon /></a>
-				<a href="" target="_blank" class="hover:scale-110 hover:opacity-80"><SendMailIcon /></a>
-			</div>
-		</div>
+		<section class="max-w-ful">
+			<div class="flex justify-start items-center gap-x-32 pl-60 mt-12 mb-8 max-w-ful">
+				<p class="text-lg"> Encuéntranos en </p>
+				<div class="flex justify-between gap-x-32 max-w-ful">
+					<a href="https://www.instagram.com/dimetumarca/" target="_blank" class="hover:scale-110 hover:opacity-80"><InstagramIcon /></a>
+					<a href="https://www.tiktok.com/@dimetumarca"  target="_blank" class="hover:scale-110 hover:opacity-80"><TikTokIcon /></a>
+					<a href="https://www.linkedin.com/company/dimetumarca/" target="_blank" class="hover:scale-110 hover:opacity-80"><LinkedInIcon /></a>
+					<a href="" target="_blank" class="hover:scale-110 hover:opacity-80"><SendMailIcon /></a>
+				</div>
+			</div>	
+		</section>
 		<SectionContainer> 
-			<div class="pt-20 pl-7 w-2/5">
+			<div class="pt-20 pl-7 w-2/5 max-w-full">
 				<img src="/images/women-power.png" alt="ilustracion de mujeres" class="w-full">
 			</div>
 			<div class="flex flex-col gap-8 pl-10 mb-20" id="about">
