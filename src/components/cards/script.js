@@ -1,4 +1,3 @@
-
 document.querySelectorAll('[data-target]').forEach(item => {
     item.addEventListener('click', function() {
         const target = this.getAttribute('data-target');
