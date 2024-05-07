@@ -8,13 +8,28 @@ import InstagramIcon from '../components/icons/Instagram.astro';
 import TikTokIcon from '../components/icons/TikTok.astro';
 import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import SendMailIcon from '../components/icons/SendMail.astro';
+import CardLanz from '../components/cards/CardLanzamiento.astro';
+import CardCreat from '../components/cards/CardCratividad.astro';
+import CardAlian from "../components/cards/CardAlianza.astro";
+import CardCreci from "../components/cards/CardCrecimiento.astro";
+import CartEstra from "../components/cards/CardEstrategia.astro";
+import CardAsesor from "../components/cards/CardAsesoria.astro";
+import CardEdicion from "../components/cards/CardEdicion.astro";
+import CardEcom from "../components/cards/CardEcomerce.astro";
+import CardInfo1 from"../components/cards/CardInfo1.astro";
+import CardInfo2 from"../components/cards/CardInfo2.astro";
+import CardInfo3 from"../components/cards/CardInfo3.astro";
+import CardInfo4 from"../components/cards/CardInfo4.astro";
+import CardInfo5 from"../components/cards/CardInfo5.astro";
+import CardInfo6 from"../components/cards/CardInfo6.astro";
+import CardInfo7 from"../components/cards/CardInfo7.astro";
+import CardInfo8 from"../components/cards/CardInfo8.astro";
 ---
-
-<Layout 
+<Layout
 	title="Dime tu marca"
 	description="Contrata a Dime tu marca">
-	<main class="w-[1440px]">
-		<section class="flex justify-center bg-gradient-to-b from-primary-blue to-secondary-blue text-white mb-12 w-[1440px]">
+	<main class="max-w-full">
+		<section class="flex justify-center bg-gradient-to-b from-primary-blue to-secondary-blue text-white mb-12 max-w-full">
 			<div class="flex items-center justify-center px-10 pt-10">
 				<div class="flex flex-col gap-8 pl-10">
 					<p class="text-[28px] w-[743px] font-light"> Conéctate al ecosistema digital y <span class="font-semibold">logra tus objetivos</span></p>
@@ -27,40 +42,92 @@ import SendMailIcon from '../components/icons/SendMail.astro';
 				</div>
 			</div>
 		</section>
-		<SectionContainer>
-			<div class="flex flex-col gap-y-8 pl-32">
+		<SectionContainer class="max-w-full mx-80">
+			<div class="flex flex-col gap-y-8 pl-44  ">
 				<p class="text-lg w-2/3"> Somos una consultora de Comunicaciones y Marketing dedicada a canalizar tu presencia digital. </p>
 				<p class="text-lg w-2/3"> Te acompañamos en el proceso para que <span class="text-primary-orange font-semibold text-xl"> cada paso sea seguro, </span><span class="text-primary-lightblue font-semibold text-xl"> y logres alcanzar tus metas. </span></p>
 			</div>
-			<div class=" w-1/3 pr-32">
+			<div class=" w-1/3 pr-32  ">
 				<img src="/images/ilust-naranja.png" alt="ilustracion de dos mujeres">
 			</div>
 		</SectionContainer>
+		<SectionContainer class="flex flex-col" >
+			<div class="flex flex-col gap-y-8   max-w-full ">
+				<h2 class="text-5xl  ">Nuestros servicios</h2>
+			
+			<div >
+						<div id="info1" class="info-container" style="display: none;">
+							<CardInfo1  />
+						</div>
+						<div id="info2" class="info-container" style="display: none;">
+							<CardInfo2/>
+
+						</div>
+						<div id="info3" class="info-container" style="display: none;">
+							<CardInfo3/>
+						</div>
+						<div id="info4" class="info-container" style="display: none;">
+							<CardInfo4/>
+						</div>
+						<div id="info5" class="info-container" style="display: none;">
+							<CardInfo5/>
+						</div>
+						<div id="info6" class="info-container" style="display: none;">
+							<CardInfo6/>
+						</div>
+						<div id="info7" class="info-container" style="display: none;">
+							<CardInfo7/>
+						</div>
+						<div id="info8" class="info-container" style="display: none;">
+							<CardInfo8/>
+						</div>
+					</div>
+				
+				<div class="grid grid-rows-3 grid-cols-3 gap-10 mt-5 ">
+					<a data-target="info1"><CardLanz class="col-start-1 row-start-1"/></a>
+					<a data-target="info2"><CardCreat class="col-start-2 row-start-1"/></a>
+					<a data-target="info3"><CardAlian  class="col-start-3 row-start-1"/></a>
+					<a data-target="info4"><CardCreci  class="col-start-1 row-start-2"/></a>
+					<a data-target="info5"><CartEstra  class="col-start-2 row-start-2"/></a>
+					<a data-target="info6"><CardAsesor  class="col-start-3 row-start-2"/></a>
+					<a  data-target="info7"><CardEdicion class="col-start-1 row-start-3"/></a>
+					<a data-target="info8"><CardEcom  class="col-start-2 row-start-3"/></a>
+				</div>
+				</div>
+					
+				
+			</SectionContainer>	
+			</div>
+				
+			
+		</SectionContainer>	
 		<SectionContainer> 
 			<div class="pl-10">
 				<LogoColor />
 				<p class="text-primary-orange pt-5 text-right font-medium text-xl"> y dejemos huella juntos </p>
 			</div>
-			<div class="flex flex-col gap-8 pl-20">
-				<h1 class="text-[50px] w-[675px]"> Tenemos una <span class="text-primary-orange font-semibold"> visión única </span> </h1>
-				<p class="text-base w-[746px] font-light"> Reconocemos el sentido de aportar valor desde lo genuino. Queremos que, más allá de objetivos económicos y de vanidad, haya una pasión de por medio por el espíritu de la marca. Buscamos que sean cada vez más quienes se conecten al ecosistema digital, y recorran el camino con la seguridad que les da el conocimiento.</p>
-				<p class="text-base w-[746px]"><span class="text-primary-lightblue font-semibold text-xl"> Mientras más almas se toquen,</span><span class="text-primary-orange font-semibold text-xl"> más huellas dejaremos. </span></p>
+			<div class="flex flex-col gap-8 pl-20 max-w-full">
+				<h1 class="text-[50px] max-w-full"> Tenemos una <span class="text-primary-orange font-semibold"> visión única </span> </h1>
+				<p class="text-base max-w-full font-light"> Reconocemos el sentido de aportar valor desde lo genuino. Queremos que, más allá de objetivos económicos y de vanidad, haya una pasión de por medio por el espíritu de la marca. Buscamos que sean cada vez más quienes se conecten al ecosistema digital, y recorran el camino con la seguridad que les da el conocimiento.</p>
+				<p class="text-base max-w-full"><span class="text-primary-lightblue font-semibold text-xl"> Mientras más almas se toquen,</span><span class="text-primary-orange font-semibold text-xl"> más huellas dejaremos. </span></p>
 			</div>
 		</SectionContainer>
-		<section class="bg-primary-blue h-[456px] mt-20 w-[1440px]" id="contacto"> 
+		<section class="bg-primary-blue h-[456px] mt-20 max-w-full" id="contacto"> 
 			<Form />
 		</section>
-		<div class="flex justify-start items-center gap-x-32 pl-60 mt-12 mb-8 w-full">
-			<p class="text-lg"> Encuéntranos en </p>
-			<div class="flex justify-between gap-x-32">
-				<a href="https://www.instagram.com/dimetumarca/" target="_blank" class="hover:scale-110 hover:opacity-80"><InstagramIcon /></a>
-				<a href="https://www.tiktok.com/@dimetumarca"  target="_blank" class="hover:scale-110 hover:opacity-80"><TikTokIcon /></a>
-				<a href="https://www.linkedin.com/company/dimetumarca/" target="_blank" class="hover:scale-110 hover:opacity-80"><LinkedInIcon /></a>
-				<a href="" target="_blank" class="hover:scale-110 hover:opacity-80"><SendMailIcon /></a>
-			</div>
-		</div>
+		<section class="max-w-ful">
+			<div class="flex justify-start items-center gap-x-32 pl-60 mt-12 mb-8 max-w-ful">
+				<p class="text-lg"> Encuéntranos en </p>
+				<div class="flex justify-between gap-x-32 max-w-ful">
+					<a href="https://www.instagram.com/dimetumarca/" target="_blank" class="hover:scale-110 hover:opacity-80"><InstagramIcon /></a>
+					<a href="https://www.tiktok.com/@dimetumarca"  target="_blank" class="hover:scale-110 hover:opacity-80"><TikTokIcon /></a>
+					<a href="https://www.linkedin.com/company/dimetumarca/" target="_blank" class="hover:scale-110 hover:opacity-80"><LinkedInIcon /></a>
+					<a href="" target="_blank" class="hover:scale-110 hover:opacity-80"><SendMailIcon /></a>
+				</div>
+			</div>	
+		</section>
 		<SectionContainer> 
-			<div class="pt-20 pl-7 w-2/5">
+			<div class="pt-20 pl-7 w-2/5 max-w-full">
 				<img src="/images/women-power.png" alt="ilustracion de mujeres" class="w-full">
 			</div>
 			<div class="flex flex-col gap-8 pl-10 mb-20" id="about">
@@ -73,4 +140,5 @@ import SendMailIcon from '../components/icons/SendMail.astro';
 			</div>
 		</SectionContainer>
 	</main>
+	<script src="../components/cards/script.js"></script>
 </Layout>
