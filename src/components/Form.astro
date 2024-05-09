@@ -1,12 +1,17 @@
-<div class="text-white px-40 py-10 w-[1440px]">
-        <h2 class="text-[26px]"> Contáctanos para <span class="text-primary-orange font-semibold"> impulsar </span> tu presencia digital </h2>
-        <form action="https://formsubmit.co/1b4ca40d90bd3de5ba072c4f626a673e" method="POST" class="text-primary-blue">
-                <input type="text" name="name" placeholder="nombre" required>
-                <input type="text" name="email" placeholder="apellido">
-                <input type="text" name="email" placeholder="nombre de tu emprendimiento" required>
-                <input type="email" name="email" placeholder="e-mail" required>
-                <textarea placeholder="Déjanos tu mensaje y cuéntanos un poco más sobre ti" required class="w-[546px] h-[233px] p-5 mt-5"/>
-                <input type="hidden" name="_template" value="table">
-                <button type="submit" class="flex justify-center items-center uppercase size-18 bg-[#cec0b6] rounded-[24px] font-semibold tracking-widest hover:opacity-90 text-white uppercase px-10 py-3">enviar</button>
-        </form>
+<div class="text-white px-10 py-5 lg:px-40 lg:py-10 w-full ">
+        <div>
+                <h2 class="text-[26px]"> Contáctanos para <span class="text-primary-orange font-semibold"> impulsar </span> tu presencia digital </h2>
+
+        </div>
+        <div>
+                <form action="https://formsubmit.co/1b4ca40d90bd3de5ba072c4f626a673e" method="POST" class="text-primary-blue grid grid-rows-3 grid-cols-7  gap-4 ">
+                        <input type="text" name="name" placeholder="nombre" required class="row-span-1 col-span-2  row-start-1 col-start-1 col-end-3 mt-4 mb-4">
+                        <input type="text" name="surname" placeholder="apellido" required class="row-span-1 col-span-2 col-start-3 col-end-5 mt-4 mb-4">
+                        <input type="text" name="business_name" placeholder="nombre de tu emprendimiento" required class="row-span-1 col-span-4 row-start-2 col-start-1  col-end-5 mt-4 mb-4">
+                        <input type="email" name="email" placeholder="e-mail" required class="row-span-1 col-span-4 col-span-3 col-start-1 col-end-4 mt-4 mb-4">
+                        <textarea placeholder="Déjanos tu mensaje y cuéntanos un poco más sobre ti" required class="w-full lg:w-[546px] h-[233px] p-5  row-span-3 col-span-3  row-start-1 row-end-4 col-start-5 col-end-8 mt-4 mb-4 "></textarea>
+                        <input type="hidden" name="_template" value="table">
+                        <button type="submit" class="flex justify-center items-center uppercase size-18 bg-[#cec0b6] rounded-[24px] font-semibold tracking-widest hover:opacity-90 text-white uppercase px-10 py-3 col-span-2 lg:col-span-1 col-start-1 col-end-3 lg:col-end-2">enviar</button>
+                </form>
+        </div>        
 </div>

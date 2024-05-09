@@ -3,10 +3,10 @@ import TikTokFicon from "./icons/TiktokFooterIcon.astro";
 import LinkedInFicon from "./icons/LinkedINFooter.astro";
 import SendMailFicon from "./icons/SendMailFooterIcon.astro";
 import LogoFooter from "./icons/LogoFooter.astro";
-import InstagramFicon  from './icons/InstagramFooterIcon.astro';
+import InstagramFicon from "./icons/InstagramFooterIcon.astro";
 ---
 
-<footer class="bg-primary-blue text-white flex w-[1440px]">
+<div class="bg-primary-blue text-white flex w-full">
   <div class="mt-8 ml-32 mr-0">
     <LogoFooter />
   </div>
@@ -16,42 +16,129 @@ import InstagramFicon  from './icons/InstagramFooterIcon.astro';
         <p class="text-lg text-left w-2/3 mt-6 ml-0">Dime Tu Marca</p>
       </div>
 
-      
-        <p class="flex items-center inline text-xs col-span-1 col-start-1 col-end-2 row-start-2 inline-block">
-          <InstagramFicon class="ms-0.5" />
-          <a
-            href="https://www.instagram.com/dimetumarca/"
-            target="_blank"
-            class=" hover:opacity-80"
-          >
-            https://www.instagram.com/dimetumarca/</a
-          >
-        </p>
-      
-      
-       
-        <p class="flex items-center inline text-xs col-span-1 col-start-1 col-end-2 row-start-3 m-1 inline-block">
-                <TikTokFicon class="ms-0.5" /><a
-            href="https://www.tiktok.com/@dimetumarca"
-            target="_blank"
-            class=" hover:opacity-80"
-            >https://www.tiktok.com/@dimetumarca</a
-          >
-        </p>
-      
-    
-    
-      
-        <p class="flex items-center inline text-xs  col-span-1 col-start-2 col-end-3 row-start-2 inline-block"><LinkedInFicon class="ms-0.5" />
-          <a href="https://linkedin.com/company/dimetumarca" target="_blank" class=" hover:opacity-80">
-                https://www.linkedin.com/company/dimetumarca/</a>
-        </p>
-      
-        <p class="flex items-center inline text-xs col-span-1 col-start-2 col-end-3 inline-block"><SendMailFicon class="ms-0.5" />
-          irojas@dimetumarca.com
-        </p>    
+      <p
+        class="flex items-center inline text-xs col-span-1 col-start-1 col-end-2 row-start-2 inline-block"
+      >
+        <InstagramFicon class="ms-0.5" />
+        <a
+          href="https://www.instagram.com/dimetumarca/"
+          target="_blank"
+          class="hover:opacity-80"
+        >
+          https://www.instagram.com/dimetumarca/</a
+        >
+      </p>
+
+      <p
+        class="flex items-center inline text-xs col-span-1 col-start-1 col-end-2 row-start-3 m-1 inline-block"
+      >
+        <TikTokFicon class="ms-0.5" /><a
+          href="https://www.tiktok.com/@dimetumarca"
+          target="_blank"
+          class="hover:opacity-80">https://www.tiktok.com/@dimetumarca</a
+        >
+      </p>
+
+      <p
+        class="flex items-center inline text-xs col-span-1 col-start-2 col-end-3 row-start-2 inline-block"
+      >
+        <LinkedInFicon class="ms-0.5" />
+        <a
+          href="https://linkedin.com/company/dimetumarca"
+          target="_blank"
+          class="hover:opacity-80"
+        >
+          https://www.linkedin.com/company/dimetumarca/</a
+        >
+      </p>
+
+      <p
+        class="flex items-center inline text-xs col-span-1 col-start-2 col-end-3 inline-block"
+      >
+        <SendMailFicon class="ms-0.5" />
+        irojas@dimetumarca.com
+      </p>
+    </div>
   </div>
-  <div class="text-xs tracking-wider text-end mt-8">
-    <p>Developed by <a href="https://www.linkedin.com/in/luciaperezalberca/" target="_blank" class="underline">Lucia Perez Alberca</a> y <a href="https://www.linkedin.com/in/alanmisaelpozzi/" target="_blank" class="underline">Alan Misael Pozzi</a></p>
+
+  <a href=`#backtotop` class="flex place-items-end mr-16 mb-4">
+    <button
+      class="flex justify-center items-center uppercase size-18 bg-[#FFFFFF] w-[264px] h-[59px] rounded-3xl font-semibold tracking-widest hover:opacity-90 text-primary-lightblue"
+      >BACK TO TOP</button
+    ></a
+  >
+</div>
+
+<div class="bg-[#5787B3] w-full">
+  <p class="text-white text-xs text-center pt-6">
+    El diseño y desarrollo de esta web fueron realizados como una practica
+    profesional impulsada por Coderhouse
+  </p>
+</div>
+<div class="bg-[#5787B3] w-full pt-6 pb-8">
+  <div class="grid grid-rows-1 grid-cols-12 place-content-center">
+    <div class="grid col-span-1 col-start-2 flex justify-end">
+      <img
+        src="../../public/images/M. Valentina Castiglioni.jpg"
+        alt=""
+        class="rounded-full w-[60px] mr-2"
+      />
+    </div>
+    <div class="col-span-2 col-start-3 col-end-5 text-white text-[11px] flex justify-start  ">
+      <div class="flex flex-col items-center ">
+
+        <p>M. Valentina Castiglioni</p>
+        <p>Diseñadora UX/UI</p>
+        
+        <a  href="https://www.linkedin.com/in/valentina-castiglioni?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ";><InstagramFicon />
+        </a>
+      </div>
+
+      
+    </div>
+
+
+
+    <div class="grid grid-row-1 col-span-1 col-start-6 col-end-7 flex justify-end ">
+      <img
+        src="../../public/images/luciaIg.jpg"
+        alt=""
+        class="rounded-full w-[60px] mr-2 "
+      />
+    </div>
+    <div class="col-span-2 row-span-1 row-start-1 col-start-7 col-end-9 text-white text-[11px] flex justify-start ">
+      <div class="flex flex-col items-center ">
+
+        <p>Lucía Pérez Alberca</p>
+        <p>Desarrolladora</p>
+        
+          <a  href="https://www.linkedin.com/in/luciaperezalberca/?originalSubdomain=ar ";><InstagramFicon />
+            </a>
+      </div>
+
+      
+    </div>
+
+    <div class="grid grid-row-1 col-span-1 col-start-10 col-end-11  flex justify-end  ">
+      <img
+        src="../../public/images/alanIg.jpg"
+        alt=""
+        class="rounded-full w-[60px] mr-2"
+      />
+    </div>
+    <div class="col-span-2 row-span-1 row-start-1 col-start-11 col-end-13 text-white text-[11px] flex justify-start ">
+      <div class="flex flex-col items-center ">
+
+        <p>Alan Pozzi</p>
+        <p>Desarrollador</p>
+        
+          <a  href="https://www.linkedin.com/in/alanmisaelpozzi/?trk=opento_sprofile_topcard ";><InstagramFicon />
+            </a>
+      </div>
+
+      
+    </div>
+
+
   </div>
-</footer>
+</div>
